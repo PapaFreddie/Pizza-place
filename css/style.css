@@ -44,3 +44,21 @@ body{
     justify-content: center;
     border-radius: 10px;
 }
+
+.menu-container{
+    background-color: rgb(228, 220, 220);
+    padding: 30px;
+}
+
+.menu-container .row{
+    justify-content: center;
+}
+
+.menu-container .row .col-md-4{
+    display: flex;
+    justify-content: center;
+
+}
+.menu-container .row .col-md-4 p{
+    text-align: center;
+}
