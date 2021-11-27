@@ -38,8 +38,9 @@ body{
     padding: 20px;
 }
 .col-md-4 img{
-    height: 50px;
-    width: 60px;
+    height: 80px;
+    width: 100px;
     display: flex;
     justify-content: center;
+    border-radius: 10px;
 }
