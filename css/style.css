@@ -62,3 +62,18 @@ body{
 .menu-container .row .col-md-4 p{
     text-align: center;
 }
+
+
+.services-container{
+    padding: 30px;
+    background-color: rgb(206, 147, 147);
+    justify-content: center;
+}
+.services-container .row{
+    justify-content: center;
+}
+.services-container .row .col-md-4{
+    justify-content: center;
+    text-align: center;
+}
+
