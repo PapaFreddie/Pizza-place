@@ -20,7 +20,7 @@
 </head>
 <body>
     <!--Nav-Bar-->
-    <!--<div class="header">
+    <div class="header">
         <nav class="navbar navbar-style">
             <div class="container">
                 <div class="navbar-header">
@@ -29,19 +29,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a href=""><img class="logo" src="./images/logo-removebg-preview.png"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#Home">HOME</a></li>
-                        <li><a href="#About Me">ABOUT ME</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#Contact Me">CONTACT ME</a></li>
+                        <li><a href="#Home" id="hm">Home</a></li>
+                        <li><a href="#Why Choose Us" id="choose">Why Choose Us</a></li>
+                        <li><a href="#Our Daily Menu" id="dailym">Our Daily Menu</a></li>
+                        <li><a href="#Our Services" id="ours">Our Services</a></li>
+                        <li><a href="#Contact Us" id="contactus">Contact Us</a></li>
+
                     </ul>
                 </div>
             </div>
         </nav>
-    </div>-->
+    </div>
     <!--End Nav-Bar-->
     
     <!--Home landing page-->
@@ -52,11 +53,56 @@
             </div>
             <h1>Welcome all to Pizza Place</h1>
             <h2>Take a Bite and be Happy</h2>
-            <div id="sign-in">
-                <a href="#" class="sign-in">Sign In</a>
-                <a href="#" class="our-menu">Our Daily Menu</a>
+            <div class="login-container">
+                <form class="form" id="login">
+                    <h4 class="form-title">Login</h4>
+                    <div class="form-message form-message-error"></div>
+                    <div class="form-input-group">
+                        <input type="text" class="input-form" placeholder="Your Email/Username">
+                        <div class="form-input-error-message"></div>
+                    </div>
+                    <div class="form-input-group">
+                        <input type="password" class="input-form" placeholder="Your Password">
+                        <div class="form-input-error-message"></div>
+                    </div>
+                    <button type="submit" class="form-submit">Continue</button>
+                    <p class="password-text">
+                        <a href="#" class="password-link">Forgot Password?</a>
+                    </p>
+                    <p class="signup-text">
+                        <a href="#" id="linkSignUp" class="signup-link">Sign Up</a>
+                    </p>
 
+
+                </form>
+                <form class="form form-hidden" id="signUpAccount">
+                    <h4 class="form-title">Create Account</h4>
+                    <div class="form-message form-message-error"></div>
+                    <div class="form-input-group">
+                        <input type="text" id="signUpUserAccount" class="input-form" placeholder="Username">
+                        <div class="form-input-error-message"></div>
+                    </div>
+                    <div class="form-input-group">
+                        <input type="text" class="input-form" placeholder="Email Address">
+                        <div class="form-input-error-message"></div>
+                    </div>
+                    <div class="form-input-group">
+                        <input type="password" class="input-form" placeholder="Password">
+                        <div class="form-input-error-message"></div>
+                    </div>
+                    <div class="form-input-group">
+                        <input type="password" class="input-form" placeholder="Confirm Password">
+                        <div class="form-input-error-message"></div>
+                    </div>
+                    <button type="submit" class="form-submit">Continue</button>
+                    <p class="signup-text">
+                        <a href="#" id="linkLogin" class="signup-link">Already Have Account? Login</a>
+                    </p>
+
+
+                </form>
             </div>
+           
         </div>
     </section>
     <!--End of Home landing page-->
@@ -64,7 +110,9 @@
     <!--About us section-->
     <div class="about">
         <div class="about-container">
-            <h2>Why Choose Us?</h2>
+            <div class="about-title text-center">
+                <h2>Why Choose Us?</h2>
+            </div>
             <div class="row">
                 <div class="col-md-4">
                     <h4>Proffessional Chefs</h4>
@@ -109,6 +157,7 @@
                         </div>
                         <p>Small Size</p>
                         <a class="price-btn" href="#">Kshs 350</a>
+                        <button type="button" id="1">Add to Cart</button>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -118,6 +167,8 @@
                         </div>
                         <p>Medium Size</p>
                         <a class="price-btn" href="#">Kshs 700</a>
+                        <button type="button" id="2">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -127,6 +178,8 @@
                         </div>
                         <p>Large Size</p>
                         <a class="price-btn" href="#">Kshs 1,200 </a>
+                        <button type="button" id="3">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -136,6 +189,8 @@
                         </div>
                         <p>Small Size(Fresh Garlic) </p>
                         <a class="price-btn" href="#">Kshs 650</a>
+                        <button type="button" id="4">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -145,6 +200,8 @@
                         </div>
                         <p>Medium Size(Fresh Garlic)</p>
                         <a class="price-btn" href="#">Kshs 1,000</a>
+                        <button type="button" id="5">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -152,8 +209,10 @@
                         <div>
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
-                        <p>Large Size(Fresh Gralic)</p>
+                        <p>Large Size(Fresh Garlic)</p>
                         <a class="price-btn" href="#">Kshs 1,400</a>
+                        <button type="button" id="6">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -161,8 +220,10 @@
                         <div>
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
-                        <p>Large Size(Sausage)</p>
+                        <p>Small Size(Sausage)</p>
                         <a class="price-btn" href="#">Kshs 800</a>
+                        <button type="button" id="7">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -170,8 +231,10 @@
                         <div>
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
-                        <p>Large Size(Sausage)</p>
+                        <p>Medium Size(Sausage)</p>
                         <a class="price-btn" href="#">Kshs 1,200</a>
+                        <button type="button" id="8">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -181,6 +244,8 @@
                         </div>
                         <p>Large Size(Sausage)</p>
                         <a class="price-btn" href="#">Kshs 1,800</a>
+                        <button type="button" id="9">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -188,8 +253,10 @@
                         <div>
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
-                        <p>Large Size(Thin Crust)</p>
+                        <p>Small Size(Thin Crust)</p>
                         <a class="price-btn" href="#">Kshs 950</a>
+                        <button type="button" id="10">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -197,8 +264,10 @@
                         <div>
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
-                        <p>Large Size(Thin Crust)</p>
+                        <p>Medium Size(Thin Crust)</p>
                         <a class="price-btn" href="#">Kshs 1,450</a>
+                        <button type="button" id="11">Add to Cart</button>
+
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -208,10 +277,33 @@
                         </div>
                         <p>Large Size(Thin Crust)</p>
                         <a class="price-btn" href="#">Kshs 1,900</a>
+                        <button type="button" id="12">Add to Cart</button>
+
                     </div>
                 </div>
             </div>
         </div>
+        <div class="cart-container">
+            <div class="cart-title text-center">
+                <h3>Cart</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                  </svg>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Item</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Unit Price</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Units</h4>
+                </div>
+
+            </div>
+        </div>
+
     </section>
     <!--End of Our Menu Section-->
     <!--Our Services-->
@@ -290,8 +382,7 @@
 
 
 
-    <script src="main.js">
-        
-    </script>
+    <script src="menu.js"></script>
+    <script src="main.js"></script>    
 </body>
 </html>

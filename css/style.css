@@ -1,14 +1,19 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.header{
+    padding-bottom: 0p;
+    
+}
 
 #home{
     background: url(/images/pizza3.jpeg)top center;
     background-size: cover;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 60px;
 }
 
 #home .home-logo img{
@@ -21,7 +26,21 @@ body{
     color: white;
     font-weight: bolder;
 }
-
+.form-hidden{
+    display: none;
+}
+.login-container h4{
+    font-weight: bold;
+    color: wheat;
+    padding-top: 20px;
+}
+.login-container a{
+    font-weight: bold;
+    color: hsl(239, 100%, 50%);
+}
+.form-input-group{
+    margin: 1rem;
+}
 .about{
     padding: 30px;
     justify-content: center;
@@ -32,9 +51,19 @@ body{
 .about .row{
     padding: 30px;
     justify-content: center;
-;
+    text-align: center;
 }
-.col-md-4{
+.about .row .col-md-4{
+    justify-content: center;
+
+
+}
+
+.about .row .col-md-4 img{
+    display: flex;
+    justify-content: center;
+}
+.about .col-md-4 {
     padding: 20px;
 }
 .col-md-4 img{
@@ -44,9 +73,14 @@ body{
     justify-content: center;
     border-radius: 10px;
 }
+.col-md-4 a{
+    justify-content: center;
+    text-align: center;
+}
+
 
 .menu-container{
-    background-color: rgb(228, 220, 220);
+    background-color: rgb(43, 42, 42);
     padding: 30px;
 }
 
@@ -62,7 +96,10 @@ body{
 .menu-container .row .col-md-4 p{
     text-align: center;
 }
-
+.cart-container .row .col-md-4{
+    display: flex;
+    justify-content: center;
+}
 
 .services-container{
     padding: 30px;
@@ -76,4 +113,38 @@ body{
     justify-content: center;
     text-align: center;
 }
+/*.about .about-container{
+    padding: 30px;
+}
+.about .about-container .row{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 
+}
+.about .about-container h2{
+    font-weight: bold;
+}
+
+.about .about-container .row h4{
+    font-weight: bold;
+
+}
+.about .about-container .row img{
+    height: 80px;
+    width: 100px;
+
+}
+.about .about-container .row p{
+    text-align: center;
+}
+
+.about .about-container .row .col-md-4 h4{
+    justify-content: center;
+    text-align: center;
+
+}
+
+#image1{
+   
+}*/
