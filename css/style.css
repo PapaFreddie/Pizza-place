@@ -158,7 +158,8 @@ form{
 .contact-container .row .col-md-6{
     display: flex;
     justify-content: center;
-    padding: 5px;   
+    padding: 5px; 
+    border-radius: 10px;  
 }
 
 .contact-container .row .col-6{
@@ -169,5 +170,5 @@ form{
 }
 #message{
     height: 200px;
-    width: 800px;
+    width: 860px;
 }
