@@ -182,8 +182,26 @@ body{
 #image1{
    
 }*/
+.cart-container{
+    justify-content: center;
+}
 
-
+.add-cart-header{
+    display: flex;
+    justify-content: space-between;
+}
+.add-cart-item{
+    display: flex;
+    justify-content: space-between;
+}
+.add-cart-footer .total{
+    display: flex;
+    justify-content: center;
+}
+.add-cart-footer .purchase{
+    display: flex;
+    justify-content: center;
+}
 form{
     justify-content: center;
 
