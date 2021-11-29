@@ -103,14 +103,17 @@ body{
     justify-content: center;
     text-align: center;
 }
+.menu-list h2{
+    text-align: center;
+}
 .menu-list .menu{
     display: flex;
     justify-content: center;
 }
 
 .pizza .pizza-container img{
-    max-height: 20%;
-    max-width: 25%;
+    max-height: 30%;
+    max-width: 40%;
     border-radius: 10px;
 }
 /*.menu-container{

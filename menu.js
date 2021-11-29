@@ -4,7 +4,7 @@ const menu = [
         name:'Small Size',
         description: 'Fresh Garlic',
         price: 650,
-        inStock:50,
+        instock:50,
         imgSrc: "./images/pizza fresh.jpeg",
 
         
