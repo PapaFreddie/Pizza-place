@@ -103,9 +103,17 @@ body{
     justify-content: center;
     text-align: center;
 }
+.menu-list .menu{
+    display: flex;
+    justify-content: center;
+}
 
-
-.menu-container{
+.pizza .pizza-container img{
+    max-height: 20%;
+    max-width: 25%;
+    border-radius: 10px;
+}
+/*.menu-container{
     background-color: rgb(252, 247, 247);
     padding: 30px;
 }
@@ -138,7 +146,7 @@ body{
 .services-container .row .col-md-4{
     justify-content: center;
     text-align: center;
-}
+}*/
 /*.about .about-container{
     padding: 30px;
 }

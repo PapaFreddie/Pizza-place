@@ -1,42 +1,18 @@
 const menu = [
     {
-        id: 1,
+        id: '1',
         name:'Small Size',
-        price: 300,
-        instock:50,
-        imgSrc: "./images/medium_size-removebg-preview.png",
-        
-    },
-    {
-        id: 2,
-        name:'Medium Size',
-        price: 700,
-        instock:50,
-        imgSrc: "./images/medium_size-removebg-preview.png",
-
-        
-    },
-    {
-        id: 3,
-        name:'Large Size',
-        price: 1200,
-        instock:50,
-        imgSrc: "./images/medium_size-removebg-preview.png",
-
-        
-    },
-    {
-        id: 4,
-        name:'Small Size(Fresh Garlic)',
+        description: 'Fresh Garlic',
         price: 650,
-        instock:50,
-        imgSrc: "./images/medium_size-removebg-preview.png",
+        inStock:50,
+        imgSrc: "./images/pizza fresh.jpeg",
 
         
     },
     {
-        id: 5,
-        name:'Medium Size(Fresh Garlic)',
+        id: '2',
+        name:'Medium Size',
+        description: 'Fresh Garlic',
         price: 1000,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
@@ -44,8 +20,9 @@ const menu = [
         
     },
     {
-        id: 6,
-        name:'Large Size(Fresh Garlic)',
+        id: '3',
+        name:'Large Size',
+        description: 'Fresh Garlic',
         price: 1400,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
@@ -53,8 +30,9 @@ const menu = [
         
     },
     {
-        id: 7,
-        name:'Small Size(Sausage)',
+        id: '4',
+        name:'Small Size',
+        description: 'Sausage topping',
         price: 800,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
@@ -62,8 +40,9 @@ const menu = [
         
     },
     {
-        id: 8,
-        name:'Medium Size(Sausage)',
+        id: '5',
+        name:'Medium Size',
+        description: 'Sausage topping',
         price: 1200,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
@@ -71,8 +50,9 @@ const menu = [
         
     },
     {
-        id: 9,
-        name:'Large Size(Sausage)',
+        id: '6',
+        name:'Large Size',
+        description: 'Sausage topping',
         price: 1800,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
@@ -80,8 +60,9 @@ const menu = [
         
     },
     {
-        id: 10,
-        name:'Small Size(Thin Crust)',
+        id: '7',
+        name:'Small Size',
+        description: 'Thin crust',
         price: 950,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
@@ -89,8 +70,9 @@ const menu = [
         
     },
     {
-        id: 11,
-        name:'Medium Size(Thin Crust)',
+        id: '8',
+        name:'Medium Size',
+        description: 'Thin crust',
         price: 1450,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
@@ -98,8 +80,9 @@ const menu = [
         
     },
     {
-        id: 12,
-        name:'Large Size(Thin Crust)',
+        id: '9',
+        name:'Large Size',
+        description: 'Thin crust',
         price: 1900,
         instock:50,
         imgSrc: "./images/medium_size-removebg-preview.png",
