@@ -56,7 +56,8 @@ function inputError(inputElement, message) {
 
 //Add to cart functionality here
 
-let addToCartButtons = document.getElementsByClassName("btn-success")
+let addToCartButtons = document.getElementsByClassName("btn-primary")
+let mainContainer = document.getElementsByTagName("tbody")[0]
 for(let i = 0; i < addToCartButtons.length; i++) {
     addToCartButtons[i].addEventListener("click", addToCart)
 }
@@ -71,7 +72,21 @@ function addToCart(event){
      let itemPrice = buttonParent.children[1].innerText
      let itemImage = buttonGrandParent.children[0].src
 
-     
+     let itemContainer = document.createElement('tr')
+     itemContainer.innerHTML = `
+     <td><input class="checkbox" type="checkbox"></td>
+     <td><img class="image1" src=${itemImage}></td>
+     <td class="text">
+         <h5 class="pizza-name">${itemName}</h5>
+     </td>
+     <td class="pizza-price"><h5>${itemPrice}</h5></td>
+     <td><input type="number" class="no" value="1"></td>
+     <td class="unit-price"><h5>${itemPrice}</h5></td>
+     <td><button type="button" class="btn btn-danger">Remove Item</button>
+     </td>
+     `
+     mainContainer.append(itemContainer)
+
       
     console.log(button)
 
