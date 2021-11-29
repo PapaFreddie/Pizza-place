@@ -54,31 +54,25 @@ function inputError(inputElement, message) {
 }
 
 
-//Add to cart
-//select elements
-const menuElements = document.querySelector(".menu");
+//Add to cart functionality here
 
-//Render menu function
-function renderMenu() {
-    menu.forEach((menu) => {
-        menuElements.innerHTML += `
-                <div class="pizza">
-                    <div class="pizza-container">
-                        <div class="pizza-image">
-                            <img src="./images/pizza fresh.jpeg" alt="pizza1">
-                        </div>
-                        <div class="description">
-                            <h4>Small Size</h4>
-                            <h5>Ksh 500</h5>
-                            <p>Garlic fresh</p>
-                        </div>
-                        <div class="add-to-cart">
-                            <button type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-        `
-
-    });
+let addToCartButtons = document.getElementsByClassName("btn-success")
+for(let i = 0; i < addToCartButtons.length; i++) {
+    addToCartButtons[i].addEventListener("click", addToCart)
 }
-renderMenu();
+
+function addToCart(event){
+    button = event.target
+     let buttonParent = button.parentElement
+
+     let buttonGrandParent = button.parentElement.parentElement
+
+     let itemName = buttonParent.children[0].innerText
+     let itemPrice = buttonParent.children[1].innerText
+     let itemImage = buttonGrandParent.children[0].src
+
+     
+      
+    console.log(button)
+
+}

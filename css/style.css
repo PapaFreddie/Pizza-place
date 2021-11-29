@@ -103,7 +103,28 @@ body{
     justify-content: center;
     text-align: center;
 }
-.menu-list h2{
+.menu-container h2{
+    text-align: center;
+}
+.menu-container .row .col-md-3 img{
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+.row{
+    justify-content: center;
+}
+table{
+    justify-content: center;
+}
+.image1{
+    height: 100px;
+    width: 150px;
+}
+/*.menu-list h2{
     text-align: center;
 }
 .menu-list .menu{
