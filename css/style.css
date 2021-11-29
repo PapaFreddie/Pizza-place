@@ -80,7 +80,7 @@ body{
 
 
 .menu-container{
-    background-color: rgb(43, 42, 42);
+    background-color: rgb(252, 247, 247);
     padding: 30px;
 }
 
@@ -148,3 +148,26 @@ body{
 #image1{
    
 }*/
+
+
+form{
+    justify-content: center;
+
+}
+
+.contact-container .row .col-md-6{
+    display: flex;
+    justify-content: center;
+    padding: 5px;   
+}
+
+.contact-container .row .col-6{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+#message{
+    height: 200px;
+    width: 800px;
+}

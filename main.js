@@ -55,4 +55,30 @@ function inputError(inputElement, message) {
 
 
 //Add to cart
+function addToCart(id) {
+    console.log(id);
+}
 
+/*//select elements
+const menuElements = document.querySelector(".menuItems");
+
+//render menu-items
+function renderMenuItems() {
+    menuItems.forEach( (menuItems) => {
+        menuElements.innerHTML += `
+            <div class="col-md-4">
+                <div class="menu-items">
+                    <div>
+                        <img src="./images/medium_size-removebg-preview.png" id="small">
+                    </div>
+                    <p>Small Size</p>
+                    <a class="price-btn" href="#">Kshs 350</a>
+                    <button type="button" id="1">Add to Cart</button>
+                </div>
+            </div> 
+         `
+         
+    })
+
+} 
+renderMenuItems();*/
