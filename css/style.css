@@ -1,11 +1,21 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.header{
-    padding-bottom: 0p;
-    
-}
 
+@media screen and (max-width: 992px) {
+    body {
+      background: rgb(233, 230, 230);
+    }
+    .navbar-toggle{
+        color: darkgoldenrod;
+    }
+    #home{
+        height: 150vh;
+    }
+    
+  }
+
+/*Home section*/
 #home{
     background: url(/images/pizza3.jpeg)top center;
     background-size: cover;
@@ -41,6 +51,18 @@ body{
 .form-input-group{
     margin: 1rem;
 }
+
+
+@media screen and (max-width: 992px) {
+
+    #home{
+        height: 150vh;
+    }
+    
+  }
+
+
+/* About section*/
 .about{
     padding: 30px;
     justify-content: center;
