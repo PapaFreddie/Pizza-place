@@ -207,7 +207,7 @@ body{
 #image1{
    
 }*/
-.cart-container{
+/*.cart-container{
     justify-content: center;
 }
 
@@ -226,7 +226,19 @@ body{
 .add-cart-footer .purchase{
     display: flex;
     justify-content: center;
+}*/
+thead{
+    justify-content: space-between;
 }
+tbody{
+    justify-content: space-between;
+    padding: 30px;
+}
+.no{
+    max-width: 20%;
+}
+
+
 form{
     justify-content: center;
 
