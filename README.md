@@ -9,15 +9,15 @@ This is a web application for Pizza Place which is a pizza selling shop. It show
 * cd Pizza-place
 * code . or atom . depending on your editor
 ## Known Bugs
-
+The website has not achieved any responsiveness and interactivity yet
 ## Future Plans
+To achieve the javaScript responsiveness
 ## Technologies Used
 * HTML
 * CSS
 * JavaScript
 * Bootstrap
 * jQuerry
-## Behaviour Driven Development
 
 ## Support and contact details
 Email: fredpapah20@gmail.com
