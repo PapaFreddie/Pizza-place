@@ -58,6 +58,9 @@ function inputError(inputElement, message) {
 
 let addToCartButtons = document.getElementsByClassName("btn-primary")
 let mainContainer = document.getElementsByTagName("tbody")[0]
+let quantitiFields = document.getElementsByClassName("no")
+
+
 for(let i = 0; i < addToCartButtons.length; i++) {
     addToCartButtons[i].addEventListener("click", addToCart)
 }
@@ -86,8 +89,36 @@ function addToCart(event){
      </td>
      `
      mainContainer.append(itemContainer)
+   
+    
+for(let i = 0; i < quantitiFields.length; i++){
+    quantitiFields[i].addEventListener("click", updateTotal)
+    total()
+}
 
-      
-    console.log(button)
+
+}
+
+function addToCart(event){
+    numberOfItems = event.target
+    numberOfItemsParent = numberOfItems.parentElement.parentElement
+    priceField = numberOfItemsParent.getElementsByClassName("pizza-price")[0]
+    totalField = numberOfItemsParent.getElementsByClassName("unit-price")[0]
+    priceFieldContent = priceField.children[0].innerText.replace('Ksh', '')
+
+    totalField.children[0].innerText = numberOfItems.value * priceFieldContent
+
+    if(isNaN(numberOfItems.value) || numberOfItems <= 0){
+        numberOfItems.value = 1
+    }
+}
+
+function total(){
+    let total = 0
+    let unitPrice = document.getElementsByClassName("unit-price")
+    for(let i = 0; i < unitPrice.length; i++) {
+        unitPriceContent = Number(unitPrice[i].innerText.replace('Ksh', ''))
+        total += unitPriceContent
+    }
 
 }

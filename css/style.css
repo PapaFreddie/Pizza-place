@@ -114,12 +114,13 @@ body{
     justify-content: center;
 
 }
-.row{
-    justify-content: center;
+.menu-container .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
-table{
-    justify-content: center;
-}
+
+
 .image1{
     height: 100px;
     width: 150px;

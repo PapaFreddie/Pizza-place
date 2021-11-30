@@ -6,7 +6,7 @@ This is a web application for Pizza Place which is a pizza selling shop. It show
 ## Setup/Installation Requirements
 * Open terminal {Cntrl+Alt+T}
 * git clone 
-* cd Akan-names
+* cd Pizza-place
 * code . or atom . depending on your editor
 ## Known Bugs
 
