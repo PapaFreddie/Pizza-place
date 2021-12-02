@@ -5,7 +5,7 @@
 This is a web application for Pizza Place which is a pizza selling shop. It shows details about the diffent pizza they sell and descritption of each type of pizza. This app also shows clients the menu and allows them to order online for their preferred pizza depending on size, crust they need. It also allows them to input a location which they would love the piza to be delivered to.
 ## Setup/Installation Requirements
 * Open terminal {Cntrl+Alt+T}
-* git clone 
+* git clone https://papafreddie.github.io/Pizza-place/
 * cd Pizza-place
 * code . or atom . depending on your editor
 ## Known Bugs

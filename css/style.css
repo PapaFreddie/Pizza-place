@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: darkgray;
+    margin: 30px;
 }
 
 @media screen and (max-width: 992px) {
@@ -61,6 +62,7 @@ body{
 .about{
     padding: 30px;
     justify-content: center;
+    background-color: skyblue;
 }
 .about h2{
     text-align: center;
@@ -103,142 +105,72 @@ body{
     justify-content: center;
     text-align: center;
 }
-.menu-container h2{
-    text-align: center;
-}
-.menu-container .row .col-md-3 img{
-    height: 200px;
-    width: 250px;
-    padding: 20px;
-    border-radius: 20px;
+.menu-container .row .col-md-4{
     justify-content: center;
-
 }
-.menu-container .row{
+
+
+/*cart*/
+.cart-page{
+    margin: 100px auto;
+    background: royalblue;
+    width: 500px;
+}
+table{
+    width: 300px auto;
+    border-collapse: collapse;
+}
+.cart-infor{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+th{
+    text-align: left;
     padding: 5px;
+    color: blue;
+    background: lightsalmon;
+    font-weight: normal;
 }
+td{
+    padding: 10px 5px;
 
-
-.image1{
-    height: 100px;
-    width: 150px;
 }
-/*.menu-list h2{
-    text-align: center;
-}
-.menu-list .menu{
-    display: flex;
-    justify-content: center;
-}
-
-.pizza .pizza-container img{
-    max-height: 30%;
-    max-width: 40%;
+td input{
+    width: 50px;
+    height: 40px;
+    padding: 10px;
     border-radius: 10px;
 }
-/*.menu-container{
-    background-color: rgb(252, 247, 247);
-    padding: 30px;
+td a{
+    color: red;
+    font-size: 12px;
 }
-
-.menu-container .row{
-    justify-content: center;
-}
-
-.menu-container .row .col-md-4{
-    display: flex;
-    justify-content: center;
-
-}
-.menu-container .row .col-md-4 p{
-    text-align: center;
-}
-.cart-container .row .col-md-4{
-    display: flex;
-    justify-content: center;
-}
-
-.services-container{
-    padding: 30px;
-    background-color: rgb(206, 147, 147);
-    justify-content: center;
-}
-.services-container .row{
-    justify-content: center;
-}
-.services-container .row .col-md-4{
-    justify-content: center;
-    text-align: center;
-}*/
-/*.about .about-container{
-    padding: 30px;
-}
-.about .about-container .row{
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-
-}
-.about .about-container h2{
-    font-weight: bold;
-}
-
-.about .about-container .row h4{
-    font-weight: bold;
-
-}
-.about .about-container .row img{
+td img{
+    width: 80px;
     height: 80px;
-    width: 100px;
-
-}
-.about .about-container .row p{
-    text-align: center;
-}
-
-.about .about-container .row .col-md-4 h4{
-    justify-content: center;
-    text-align: center;
-
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
 }
 
-#image1{
-   
-}*/
-/*.cart-container{
-    justify-content: center;
-}
-
-.add-cart-header{
+.price-infor{
     display: flex;
-    justify-content: space-between;
-}
-.add-cart-item{
-    display: flex;
-    justify-content: space-between;
-}
-.add-cart-footer .total{
-    display: flex;
-    justify-content: center;
-}
-.add-cart-footer .purchase{
-    display: flex;
-    justify-content: center;
-}*/
-thead{
-    justify-content: space-between;
-}
-tbody{
-    justify-content: space-between;
-    padding: 30px;
-}
-.no{
-    max-width: 20%;
+    flex-wrap: wrap;
+    margin-right: 80px;
+
 }
 
+.quantity-infor{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 80px;
 
+}
+.total-price{
+    display: flex-end;
+}
 form{
     justify-content: center;
 
