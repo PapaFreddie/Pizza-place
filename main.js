@@ -55,8 +55,16 @@ function inputError(inputElement, message) {
 
 
 //Add to cart functionality here
+$("#pizza-order").submit(function(e) {
+    e.preventDefault();
+    var pizzaSize = $("#pizza-size").val()
+    var crust = $("#crust").val()
+    var toppings = $("#topping").val()
+    var quantity = $("#number").val()
 
-let addToCartButtons = document.getElementsByClassName("btn-primary")
+})
+
+/*let addToCartButtons = document.getElementsByClassName("btn-primary")
 let mainContainer = document.getElementsByTagName("tbody")[0]
 let quantitiFields = document.getElementsByClassName("no")
 
@@ -121,4 +129,4 @@ function total(){
         total += unitPriceContent
     }
 
-}
+}*/

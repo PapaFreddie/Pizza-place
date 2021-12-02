@@ -244,10 +244,19 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <form class="pizza-order">
+                <form id="pizza-order">
+                    <!--Select pizza-->
+                    <label for="pizzaType">Pizza Type</label>
+                    <select name="pizzaType" id="pizzaType" class="form-control">
+                        <option value="ChicagoPizza">Chicago Pizza</option>
+                        <option value="DetroitPizza">Detroit Pizza</option>
+                        <option value="CaliforniaPizza">Carlifornia Pizza</option>
+                        <option value="NewYorkPizza">New York Pizza</option>
+                        <option value="GreekoPizza">Greek Pizza</option>
+                    </select>
 
-                    <!--Select Size-->
-                    <label for="pizza">Pizza Size:</label>
+                    <!--Select size-->
+                    <label for="pizzaSize">Pizza Size:</label>
                     <select id="pizza-size" name="pizza-size" class="form-control">
                         <option value="small">Small Size</option>
                         <option value="medium">Medium Size</option>
@@ -272,13 +281,14 @@
                     <label for="quantity">Quantity:</label></br>
                     <input type="number" id="number" min="1" required>
                 </br>
-            </br>
+                </br>
 
                     <!--Submit Button-->
-                    <button type="button" class="btn btn-primary text-center">Place Your Order!</button>
-
-
+                    <button type="submit" class="btn btn-primary text-center">Place Your Order!</button>
                 </form>
+            </div>
+            <div class="col-md-6">
+
             </div>
         </div>
     </div>
@@ -341,6 +351,10 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="menu.js"></script>
-    <script src="main.js"></script>    
+    <script src="main.js">
+        $(document).ready(function(){
+
+        });
+    </script>    
 </body>
 </html>
