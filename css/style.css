@@ -116,7 +116,7 @@ body{
     background: royalblue;
     width: 500px;
 }
-table{
+/*table{
     width: 300px auto;
     border-collapse: collapse;
 }
@@ -170,6 +170,18 @@ td img{
 }
 .total-price{
     display: flex-end;
+}*/
+.feedback{
+    display: none;
+}
+#finalPick{
+    display: none;
+}
+#orderText{
+    display: none;
+}
+#placeOfOrder{
+    display: none;
 }
 form{
     justify-content: center;
@@ -192,4 +204,10 @@ form{
 #message{
     height: 200px;
     width: 860px;
+    resize: none;
+    background: transparent;
+}
+#name,
+#text{
+    background: transparent;
 }

@@ -180,7 +180,7 @@
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
                         <p>(Sausage topping)</p>
-                        <a class="price-btn" href="#">Kshs 650</a>
+                        <a class="price-btn" href="#">Kshs 850</a>
             
                     </div>       
                 </div>
@@ -200,7 +200,7 @@
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
                         <p>(Tomato topping)</p>
-                        <a class="price-btn" href="#">Kshs 1,150</a>
+                        <a class="price-btn" href="#">Kshs 900</a>
             
                     </div>       
                 </div>
@@ -210,7 +210,7 @@
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
                         <p>(Thin Crust)</p>
-                        <a class="price-btn" href="#">Kshs 1,050</a>
+                        <a class="price-btn" href="#">Kshs 850</a>
             
                     </div>       
                 </div>
@@ -220,7 +220,7 @@
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
                         <p>(Flatbread Crust)</p>
-                        <a class="price-btn" href="#">Kshs 1,450</a>
+                        <a class="price-btn" href="#">Kshs 1,050</a>
             
                     </div>       
                 </div>
@@ -230,7 +230,7 @@
                             <img src="./images/medium_size-removebg-preview.png">
                         </div>
                         <p>(Thick Crust)</p>
-                        <a class="price-btn" href="#">Kshs 1,850</a>
+                        <a class="price-btn" href="#">Kshs 950</a>
             
                     </div>       
                 </div>
@@ -257,7 +257,7 @@
 
                     <!--Select size-->
                     <label for="pizzaSize">Pizza Size:</label>
-                    <select id="pizza-size" name="pizza-size" class="form-control">
+                    <select id="pizza-size" name="pizzaSize" class="form-control">
                         <option value="small">Small Size</option>
                         <option value="medium">Medium Size</option>
                         <option value="large">Large Size</option>
@@ -266,9 +266,9 @@
                     <!--Select crust-->
                     <label for="crust">Crust:</label>
                     <select class="form-control" name="crust" id="crust">
-                        <option value="thiCcrust">Thin Crust</option>
-                        <option value="flatbreadCrust">Flatbread Crust</option>
-                        <option value="thickCrust">Thick Crust</option>
+                        <option value="thincrust">Thin Crust</option>
+                        <option value="flatbreadcrust">Flatbread Crust</option>
+                        <option value="thickcrust">Thick Crust</option>
                     </select>
                     <!--Select topping-->
                     <label for="toppings">Toppings:</label>
@@ -288,6 +288,22 @@
                 </form>
             </div>
             <div class="col-md-6">
+                <div class="feedback text text-blue">
+                    <p>Order received!Total number of pizza: <span class="notify" id="pizzaNo"></span></p>
+                    <p>Total Ammount = <strong id="total-cash"></strong></p>
+                    <p><span style="color: blue;" class="show">NB:</span>Delivery fee = 170</p>
+                    <input type="button" id="delivery" value="Delivery">
+                    <input type="button" value="Pick" id="pick">
+                </div>
+                <div class="place-order">
+                    <input type="button" value="Place order" id="placeOfOrder">
+                </div>
+                <div id="orderText">
+                    <p class="text-blue"><strong id="received">Order received! Total ammount = </strong><em class="notice" id="notice"></em></p>
+                </div>
+                <div class="notifyDelivery">
+                    <p id="finalPick">Your pizza is read. THANK YOU AND WELCOME AGAIN!!!!!. Total ammount = <em id="finalAmmount"></em></p>
+                </div>
 
             </div>
         </div>

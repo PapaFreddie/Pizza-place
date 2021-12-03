@@ -62,7 +62,94 @@ $("#pizza-order").submit(function(e) {
     var toppings = $("#topping").val()
     var quantity = $("#number").val()
 
+    //Select pizza
+    switch(pizzaSize){
+        case "small":
+            price = 500;
+        break;
+        case "medium":
+            price = 700;
+        break;
+        case "large":
+            price = 900;
+        break;
+        default:
+            price = 0;
+           
+    }
+    //Select crust
+    switch(crust) {
+        case "thincrust":
+            cPrice = 150;
+        break;
+        case "flatbreadcrust":
+            cPrice = 250;
+        break;
+        case "thickcrust":
+            cPrice = 200;
+        break;
+        default:
+            cPrice = 100;
+
+    }
+    //Select toppings
+    switch(toppings) {
+        case "sausage":
+            tPrice = 50;
+        break;
+        case "pinneaple":
+            tPrice = 30;
+        break;
+        case "tomato":
+            tPrice = 15;
+        break;
+    }
+    Delivery = 170;
+    totalPrice = (price + cPrice + tPrice) * pizzaNumber
+    tTotal = ((price + cPrice + tPrice) * pizzaNumber) + Delivery
+
+
+    $(".feedback").show()
+    $("#total-cash").HTML(totalPrice)
+    $("#pizzaNo").HTML(pizzaNumber)
+    $("#delivery").on(click, function(){
+        $(".feedback").hide()
+        $("list").append(`<td>${pizzaSize.size}</td>`)
+
+    })
+    $("#placeOfOrder").click(function(e){
+        e.preventDefault()
+        var name = $("#realName").val()
+        var location = $("#locate").val()
+        if(name == ""){
+            alert("Please input name")
+        }
+        else{
+            $("#orderText").show()
+            $("#received").html(name)
+            $("#notice").html(tTotal)
+            $("#finalAmmount").html(tTotal) 
+        }
+    })
+    $("#pick").click(function(){
+        $("#finalPick").show()
+        $(".notifyDelivery").hide()
+        $("#finalAmmount").show()
+    })
+
 })
+
+
+var price, cPrice, tPrice, totalPrice, Delivery, tTotal;
+
+class pizza {
+    constructor(size, crust, toppings, number) {
+        this.size = size,
+            this.crust = crust,
+            this.toppings = toppings,
+            this.number = number;
+    }
+}
 
 /*let addToCartButtons = document.getElementsByClassName("btn-primary")
 let mainContainer = document.getElementsByTagName("tbody")[0]
